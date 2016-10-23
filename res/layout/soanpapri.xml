@@ -1,0 +1,108 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:background="@drawable/b2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+ 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    
+    
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+<RelativeLayout
+    android:id="@+id/indi"
+    android:layout_width="match_parent"
+    android:layout_height="485dp"
+    android:orientation="vertical" >
+
+  <Button
+        android:id="@+id/button1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/n2"
+        android:text="  " />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/n4"
+        android:text=" " />
+    
+     <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:text="PATTESA   "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+ <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="29dp"
+        android:text="SOANPAPRI "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+ <RelativeLayout
+     android:id="@+id/india"
+     android:layout_width="200dp"
+     android:layout_height="300dp"
+     android:layout_below="@+id/button2"
+     android:layout_centerHorizontal="true"
+     android:layout_marginTop="30dp"
+      />
+
+       <Button
+                  android:id="@+id/bu"
+                  style="?android:attr/buttonStyleSmall"
+                  android:layout_width="30dp"
+                  android:layout_height="20dp"
+                  android:layout_alignParentLeft="true"
+                  android:layout_alignParentTop="true"
+                  android:background="@drawable/ss" />
+              
+ 
+    </RelativeLayout>
+ </FrameLayout>
+ </LinearLayout>
+ </ScrollView>
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/b7"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:src="#fff"/>
+</android.support.v4.widget.DrawerLayout>
+ 
+    
+    
